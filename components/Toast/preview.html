@@ -1,0 +1,19 @@
+<!-- @dsCard group="Feedback" height=240 subtitle="Brief confirmations with a sea-glass status icon" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=DM+Mono&display=swap">
+<style>
+  body { margin: 0; }
+  .stage { box-sizing: border-box; min-height: 100dvh; padding: 32px; }
+  .stage { display: grid; gap: 12px; align-content: end; justify-items: center; padding-bottom: 28px; }
+</style>
+</head>
+<body>
+<div class="shore stage">
+  <div class="glass glass-strong toast" role="status"><span class="toast-icon pebble sg-seafoam"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Saved<button class="btn btn-ghost btn-sm">Undo</button></div>
+  <div class="glass glass-strong toast" role="alert"><span class="toast-icon pebble sg-coral"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Upload failed. Check your connection.<button class="btn btn-ghost btn-sm">Retry</button></div>
+</div>
+</body>
+</html>

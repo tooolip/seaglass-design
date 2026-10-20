@@ -1,0 +1,33 @@
+<!-- @dsCard group="Actions" height=280 subtitle="Seafoam primary, frost secondary, ghost, danger, loading and disabled" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=DM+Mono&display=swap">
+<style>
+  body { margin: 0; }
+  .stage { box-sizing: border-box; min-height: 100dvh; padding: 32px; }
+  .stage { display: grid; gap: 22px; align-content: center; }
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+</style>
+</head>
+<body>
+<div class="shore stage">
+  <div class="row">
+    <button class="btn btn-primary">Save changes</button>
+    <button class="btn">Preview</button>
+    <button class="btn btn-ghost">Cancel</button>
+    <button class="btn btn-danger">Delete</button>
+    <button class="btn btn-primary" aria-busy="true">Publishing</button>
+    <button class="btn btn-primary" disabled>Publish</button>
+  </div>
+  <div class="row">
+    <button class="btn btn-sm"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>New page</button>
+    <button class="btn btn-sm">Share</button>
+    <button class="btn btn-icon" aria-label="Search"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+    <button class="btn btn-icon btn-sm" aria-label="Close"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="btn btn-primary btn-lg">Publish portfolio</button>
+  </div>
+</div>
+</body>
+</html>

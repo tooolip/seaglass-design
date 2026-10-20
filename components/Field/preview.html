@@ -1,0 +1,47 @@
+<!-- @dsCard group="Inputs" height=500 subtitle="Frost fields, select, textarea, errors and the prompt bar" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=DM+Mono&display=swap">
+<style>
+  body { margin: 0; }
+  .stage { box-sizing: border-box; min-height: 100dvh; padding: 32px; }
+  .stage { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; align-content: center; }
+  .full { grid-column: 1 / -1; }
+  @media (max-width: 640px) { .stage { grid-template-columns: 1fr; padding: 20px; } .full { grid-column: auto; } }
+</style>
+</head>
+<body>
+<div class="shore stage">
+  <div class="prompt sg-aqua full">
+    <button class="prompt-btn" aria-label="Add a file"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+    <input aria-label="Ask anything" placeholder="Ask anything">
+    <button class="prompt-btn" aria-label="Dictate"><svg class="icon" viewBox="0 0 24 24"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M6 11.5a6 6 0 0012 0M12 17.5V20.5"/></svg></button>
+    <button class="prompt-btn is-solid" aria-label="Send"><svg class="icon" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+  </div>
+  <div class="field-group">
+    <label class="field-label" for="f-name">Project name</label>
+    <input class="field" id="f-name" value="Tide journal">
+    <span class="field-help">Shown on your portfolio.</span>
+  </div>
+  <div class="field-group">
+    <label class="field-label" for="f-search">Search</label>
+    <span class="field-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input class="field" id="f-search" placeholder="Search projects"></span>
+  </div>
+  <div class="field-group">
+    <label class="field-label" for="f-type">Type</label>
+    <span class="field-wrap is-select"><select class="field" id="f-type"><option>Web app</option><option>Portfolio</option><option>Deck</option></select></span>
+  </div>
+  <div class="field-group">
+    <label class="field-label" for="f-email">Email</label>
+    <input class="field" id="f-email" value="hello@" aria-invalid="true" aria-describedby="f-email-err">
+    <span class="field-error" id="f-email-err">Enter a full email address, like name@example.com.</span>
+  </div>
+  <div class="field-group full">
+    <label class="field-label" for="f-notes">Notes</label>
+    <textarea class="field" id="f-notes" placeholder="What is this project about?"></textarea>
+  </div>
+</div>
+</body>
+</html>

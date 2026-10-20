@@ -1,0 +1,42 @@
+<!-- @dsCard group="Decks" height=320 subtitle="16:9 slides with solid panels and pebble accents" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=DM+Mono&display=swap">
+<style>
+  body { margin: 0; }
+  .stage { box-sizing: border-box; min-height: 100dvh; padding: 32px; }
+  .stage { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-content: center; padding: 24px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2cqw; margin-top: 1cqw; }
+  .slide-panel b { display: block; font: 800 2.2cqw/1.3 var(--font-sans); margin-bottom: 0.8cqw; }
+  .slide-panel span { font: 500 1.8cqw/1.5 var(--font-sans); color: var(--ink-muted); }
+  .stones { position: absolute; right: -3cqw; bottom: 9cqw; display: flex; gap: 1.6cqw; }
+  .stones i { display: block; height: 7cqw; border-radius: 999px; }
+  @media (max-width: 640px) { .stage { grid-template-columns: 1fr; padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="stage">
+  <section class="slide shore" aria-label="Title slide">
+    <div class="stones" aria-hidden="true"><i class="pebble sg-seafoam" style="width:16cqw"></i><i class="pebble sg-cobalt" style="width:11cqw"></i></div>
+    <div class="slide-inner">
+      <span class="slide-eyebrow">Case study</span>
+      <h2 class="slide-title">Building a calmer notes app</h2>
+      <p class="slide-text">What changed when the interface stepped back.</p>
+      <div class="slide-footer"><span>oct 2026</span><span>01</span></div>
+    </div>
+  </section>
+  <section class="slide shore" aria-label="Content slide">
+    <div class="slide-inner">
+      <span class="slide-eyebrow">Approach</span>
+      <div class="cols">
+        <div class="slide-panel"><b>Less chrome</b><span>Toolbars appear only while writing.</span></div>
+        <div class="slide-panel"><b>Soft color</b><span>One accent, and one hue per section of the app.</span></div>
+      </div>
+      <div class="slide-footer"><span>Building a calmer notes app</span><span>02</span></div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

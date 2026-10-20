@@ -1,0 +1,43 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap">
+<style>
+  html, body { margin: 0; background: var(--ground); }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--ground); }
+  svg { position: absolute; inset: 0; }
+  .seafoam { fill: var(--seafoam-glass); } .aqua { fill: var(--aqua-glass); } .cobalt { fill: var(--cobalt-rim); }
+  .amber { fill: var(--amber-glass); } .lavender { fill: var(--lavender-glass); }
+  .rim-seafoam { fill: var(--seafoam-rim); } .rim-aqua { fill: var(--aqua-rim); } .rim-lavender { fill: var(--lavender-rim); }
+  .text { position: absolute; left: 32px; bottom: 32px; width: 440px; }
+  .name { margin: 0; font: 700 56px/0.95 var(--font-sans); letter-spacing: -0.02em; color: var(--ink); }
+  .tag { margin: 16px 0 0; font: 500 14px/1.4 var(--font-sans); color: var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <!--
+    blocks: cobalt-rim 288x112 pill, seafoam-glass 224x96 pill, aqua-glass 176x176 disc, amber-glass 152x80 pill, lavender-glass 240x104 pill
+    arrangement: a loose pile of pebbles washed against the right edge, two bleeding off it
+    pattern: soft, large radii -> pills and discs; each pebble keeps a smaller rim-colored pebble resting on it, the glass's deeper edge
+    steps and radii: 16px gaps, radius-pill throughout (rx = half the short side)
+  -->
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+    <rect class="lavender" x="496" y="24" width="240" height="104" rx="52"/>
+    <rect class="cobalt" x="752" y="-24" width="288" height="112" rx="56"/>
+    <circle class="aqua" cx="840" cy="192" r="88"/>
+    <rect class="seafoam" x="528" y="144" width="224" height="96" rx="48"/>
+    <rect class="amber" x="880" y="232" width="152" height="80" rx="40"/>
+    <rect class="rim-lavender" x="672" y="48" width="48" height="48" rx="24"/>
+    <rect class="rim-seafoam" x="552" y="176" width="80" height="32" rx="16"/>
+    <circle class="rim-aqua" cx="808" cy="168" r="24"/>
+  </svg>
+  <div class="text">
+    <h1 class="name">Personal<br>Design System</h1>
+    <p class="tag">Tinted sea glass, worn smooth.</p>
+  </div>
+</div>
+</body>
+</html>
